@@ -181,7 +181,7 @@ loc_13758:
 		sub.w	d1,obY(a0)
 		tst.w	obVelY(a0)
 		bpl.s	locret_13770
-		move.w	#0,obVelY(a0)
+		move.w	#5,obVelY(a0)
 
 locret_13770:
 		rts	
