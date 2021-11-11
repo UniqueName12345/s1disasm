@@ -220,7 +220,7 @@ Solid_TopBottom:
 		tst.w	d3		; is Sonic below the object?
 		bmi.s	Solid_Below	; if yes, branch
 		cmpi.w	#$10,d3		; has Sonic landed on the object?
-		bcs.s	Solid_Landed	; if yes, branch
+		beq.s	Solid_Landed	; if yes, branch
 		bra.s	Solid_Ignore
 ; ===========================================================================
 
