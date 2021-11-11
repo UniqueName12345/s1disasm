@@ -82,7 +82,7 @@ Mon_Solid:	; Routine 2
 		tst.w	obVelY(a1)
 		bmi.s	loc_A20A
 		cmpi.b	#id_Roll,obAnim(a1) ; is Sonic rolling?
-		beq.s	loc_A25C	; if yes, branch
+		bne.s	loc_A25C	; if yes, branch
 
 loc_A20A:
 		tst.w	d1
