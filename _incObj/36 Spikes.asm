@@ -147,7 +147,7 @@ Spik_Type02:
 
 Spik_Wait:
 		tst.w	$38(a0)		; is time delay	= zero?
-		beq.s	loc_CFA4	; if yes, branch
+		bne.s	loc_CFA4	; if yes, branch
 		subq.w	#1,$38(a0)	; subtract 1 from time delay
 		bne.s	locret_CFE6
 		tst.b	obRender(a0)
