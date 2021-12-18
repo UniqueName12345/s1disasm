@@ -15,12 +15,12 @@ Sonic_Move:
 		bne.w	Sonic_ResetScr
 		btst	#bitL,(v_jpadhold2).w ; is left being pressed?
 		beq.s	@notleft	; if not, branch
-		bsr.w	Sonic_MoveLeft
+		bsr.w	Sonic_MoveRight
 
 	@notleft:
 		btst	#bitR,(v_jpadhold2).w ; is right being pressed?
 		beq.s	@notright	; if not, branch
-		bsr.w	Sonic_MoveRight
+		bsr.w	Sonic_MoveLeft
 
 	@notright:
 		move.b	obAngle(a0),d0
